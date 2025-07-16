@@ -45,6 +45,11 @@ export default {
     link.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
     link.rel = "stylesheet";
     document.head.appendChild(link);
+
+    const tailwind = document.createElement('script');
+    tailwind.src = "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4";
+    tailwind.defer = true;
+    document.head.appendChild(tailwind);
   },
   methods: {
     async handleSend() {
@@ -129,7 +134,6 @@ export default {
   }
 };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
