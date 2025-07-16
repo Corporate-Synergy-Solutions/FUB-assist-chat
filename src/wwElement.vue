@@ -130,7 +130,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
 /**** Paste all original CSS from <style> here ****/
  :root {
             --primary-color: #70b4f6;
@@ -141,7 +145,7 @@ export default {
         body {
             min-height: 100vh;
             width: 100%;
-            background: var(--tertiary-color);
+            background: #f0f4f8;
             position: relative;
             font-family: "Inter", sans-serif;
         }
@@ -222,8 +226,8 @@ export default {
         /* .chat-message.left, */
         .chat-bubble.bot {
             align-self: flex-start;
-            background-color: var(--tertiary-color);
-            border: 1px solid var(--primary-color);
+            background-color: #f0f4f8;
+            border: 1px solid #70b4f6;
             color: #333;
             border-bottom-left-radius: 0;
         }
@@ -231,7 +235,7 @@ export default {
         /* .chat-message.right, */
         .chat-bubble.user {
             align-self: flex-end;
-            background-color: var(--primary-color);
+            background-color: #70b4f6;
             border: 1px solid rgb(58 155 254);
             color: #fff;
             border-bottom-right-radius: 0;
