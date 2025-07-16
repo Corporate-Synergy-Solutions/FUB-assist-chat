@@ -1,6 +1,6 @@
 {
   "name": "FUB-assist-chat",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "scripts": {
     "build": "weweb build",
     "serve": "weweb serve"
